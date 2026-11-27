@@ -1,0 +1,13 @@
+<h1>投稿詳細</h1>
+
+<div class="detail-box">
+  <p><strong>タイトル：</strong><%= @article.title %></p>
+  <p><strong>投稿内容：</strong></p>
+  <p><%= simple_format(@article.content) %></p>
+</div>
+
+<div class="flex-gap-10">
+  <%= link_to "編集", edit_article_path(@article), class: "btn-gray" %>
+  <%= link_to "一覧へ戻る", articles_path, class: "btn-gray" %>
+  <%= button_to "削除", article_path(@article), method: :delete, class: "btn-red" %>
+</div>

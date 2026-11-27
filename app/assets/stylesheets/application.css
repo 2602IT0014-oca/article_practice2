@@ -1,0 +1,98 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+/* フラッシュメッセージ */
+/* メッセージ表示（緑・赤） */
+.message-green {
+  color: green;
+  background-color: #e6f4ea;
+  border: 1px solid green;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.message-red {
+  color: red;
+  background-color: #fce8e6;
+  border: 1px solid red;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* 幅・余白・配置 */
+.width-200 {
+  width: 200px;
+}
+
+.width-300 {
+  width: 300px;
+  padding: 5px;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.flex-gap-10 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* テーブル・黒い枠線 */
+.table-full {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-full th,
+.table-full td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+
+.detail-box {
+  border: 1px solid #000;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* ボタン */
+.btn-blue {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 8px 14px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-gray {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 8px 14px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn-red {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+<% if notice %>
+  <p class="message-green"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="message-red"><%= alert %></p>
+<% end %>
+
+<h1>投稿一覧</h1>
+
+<div class="margin-bottom-20">
+  <%= link_to "新規投稿", new_article_path, class: "btn-blue" %>
+</div>
+
+<table class="table-full">
+  <thead>
+    <tr>
+      <th class="width-200">タイトル</th>
+      <th>投稿内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= link_to article.title, article_path(article) %></td>
+        <td><%= article.content %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
